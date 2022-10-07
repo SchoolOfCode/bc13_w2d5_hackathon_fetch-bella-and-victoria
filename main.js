@@ -1,48 +1,67 @@
-//let p = document.querySelector('#question')
-//p.textContent = question
 
-// let question = triviaData.results[0].question
-
+// FUNCTION to return the data as JS object we can USE, assigned variable 'data'
 async function fetchTrivia(){
-let trivia = await fetch ("https://opentdb.com/api.php?amount=50&type=boolean");
-let triviaData = await trivia.json ()
-return triviaData
-}
+    let trivia = await fetch ("https://opentdb.com/api.php?amount=50&type=boolean");
+    let triviaData = await trivia.json ()
+    return triviaData
+    }
 
 let data = fetchTrivia()
 console.log (data)
 
-console.log(data.results)
+// function task1 (data){}
 
-// let trueButton = document.querySelector("#true")
-// let falseButton = document.querySelector("#false")
+//function task2 (data){}
 
-// trueButton.addEventListener("click", checkAnswer)
-// function checkAnswer(){
-//     if 
-// }
-
-// falseButton.addEventListener("click", #)
-
-// function fetchAnswer(str){
-//     let correctAnswer = triviaData.results[0].correct_answer
-// }
-
-// let correctAnswer = data.
-// console.log(correctAnswer)
+// async function main (){
+    // const data = await fetchTrivia();
+    // await task1(data)
+    // await task2(data);
+//}
 
 
-//  if ()
-// // else {YOU LOSE}
-// }
 
-function answerFalse (){
+
+
+
+
+
+// ##### LOOSE CODE ####
+    //let p = document.querySelector('#question')
+    //p.textContent = question
+
+    // let question = triviaData.results[0].question
+
+    // let trueButton = document.querySelector("#true")
+    // let falseButton = document.querySelector("#false")
+
+    // trueButton.addEventListener("click", checkAnswer)
+    // function checkAnswer(){
+    //     if 
+    // }
+
+    // falseButton.addEventListener("click", #)
+
+    // function fetchAnswer(str){
+    //     let correctAnswer = triviaData.results[0].correct_answer
+    // }
+
+    // let correctAnswer = data.
+    // console.log(correctAnswer)
+
+
+    //  if ()
+    // // else {YOU LOSE}
+    // }
+
+    //function answerFalse (){
     // if correct answer === FALSE, {return WIN!}
     // else {YOU LOSE}
-    }
+    //}
 
 
 
+// ##### PLAN ####
 
 // from user:
 // start with one category  (music)
