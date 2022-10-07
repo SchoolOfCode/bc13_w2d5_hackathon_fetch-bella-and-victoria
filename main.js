@@ -6,8 +6,8 @@ async function fetchTrivia(){
     return triviaData
     }
 
-let data = fetchTrivia()
-console.log (data)
+let data =  await fetchTrivia()
+console.log (data.results[0])
 
 // function task1 (data){}
 
@@ -20,8 +20,10 @@ console.log (data)
 //}
 
 
-
-
+// when new question is generated, 
+// when true button is clicked:
+    //return the value true and compare it with data.results[questionNumber]
+    // if true === data.results[questionNumber], return 'you win!'
 
 
 
