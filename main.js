@@ -6,18 +6,24 @@ async function fetchTrivia(){
     return triviaData
     }
 
-let data =  await fetchTrivia()
-console.log (data.results[0])
 
-// function task1 (data){}
+let data = await fetchTrivia();
 
-//function task2 (data){}
+
+function task1 (data){
+    let question = data.results[0].question
+    return question
+}
+
+console.log(task1(data))
+
+function task2 (data){}
 
 // async function main (){
-    // const data = await fetchTrivia();
-    // await task1(data)
-    // await task2(data);
-//}
+//     const data = await fetchTrivia();
+//     await task1(data)
+//     await task2(data);
+// }
 
 
 // when new question is generated, 
