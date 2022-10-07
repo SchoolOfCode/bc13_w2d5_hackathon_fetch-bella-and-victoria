@@ -1,14 +1,48 @@
-async function FetchTrivia(){
+//let p = document.querySelector('#question')
+//p.textContent = question
+
+// let question = triviaData.results[0].question
+
+async function fetchTrivia(){
 let trivia = await fetch ("https://opentdb.com/api.php?amount=50&type=boolean");
-let triviaData = await trivia.json ();
-
-let question = triviaData.results[0].question
-let p = document.querySelector('#question')
-p.textContent = question
-
+let triviaData = await trivia.json ()
+return triviaData
 }
 
-console.log (FetchTrivia())
+let data = fetchTrivia()
+console.log (data)
+
+console.log(data.results)
+
+// let trueButton = document.querySelector("#true")
+// let falseButton = document.querySelector("#false")
+
+// trueButton.addEventListener("click", checkAnswer)
+// function checkAnswer(){
+//     if 
+// }
+
+// falseButton.addEventListener("click", #)
+
+// function fetchAnswer(str){
+//     let correctAnswer = triviaData.results[0].correct_answer
+// }
+
+// let correctAnswer = data.
+// console.log(correctAnswer)
+
+
+//  if ()
+// // else {YOU LOSE}
+// }
+
+function answerFalse (){
+    // if correct answer === FALSE, {return WIN!}
+    // else {YOU LOSE}
+    }
+
+
+
 
 // from user:
 // start with one category  (music)
@@ -17,12 +51,14 @@ console.log (FetchTrivia())
     // 👉 create buttons: 
         // 👉 question field => 
         // 👉 true or false buttons
-        //  link the question to question paragraph
+        //  👉link the question to question paragraph
         //  link the true or false to the answers 
-
-
         //function with event listeners 
+            // add an event listener to TRUE and FALSE button
+            // write one function so that when it is clicked it returns T/F
+            //  apply to both buttons
 
+    // create' next question' button that generates new question
     // create a loop that moves on to the next question 
     // create an event => every time the user presses the button
     // create a skip button to move on to the next question 
